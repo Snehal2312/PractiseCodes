@@ -1,0 +1,40 @@
+
+import java.util.Scanner;
+class EvenOddNumbers
+{
+    public static void main(String[] args) 
+    {
+       int[] array = new int[5];
+       int even = 0;
+       int odd = 0;
+       Scanner scanner = new Scanner(System.in);
+       System.out.println("Enter the elements : ");
+       for(int i = 0 ; i < 5; i++)
+       {
+           array[i] = scanner.nextInt();
+       }
+       
+       System.out.println("The elements of the array are : ");
+       for(int i = 0 ; i < 5; i++)
+       {
+           System.out.println(array[i]);
+       }
+       
+    
+       for(int i = 0 ; i < 5; i++)
+       {
+           if(array[i] % 2 == 0)
+           {
+               even = even + 1;
+           }
+           else
+           {
+               odd = odd + 1;
+           }
+       }
+   
+    System.out.println("The number of even numbers :"+even+ "");
+    System.out.println("\nThe number of odd numbers :"+odd+ "");
+    }
+    
+}
